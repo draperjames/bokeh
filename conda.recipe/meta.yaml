@@ -17,7 +17,7 @@ requirements:
   build:
     - python
     - setuptools
-    - nodejs >=4.1
+    - nodejs >=6.6.0
     - six
     - packaging
     - python-dateutil
@@ -44,6 +44,7 @@ requirements:
 
 test:
   requires:
+    - conda ==4.2.15
     # docs
     - pygments
     - sphinx >=1.3.1
@@ -69,7 +70,7 @@ test:
     - pillow
     - boto
     - pdiff                  [unix]
-    - nodejs >=4.1
+    - nodejs >=6.6.0
 
     # examples
     - jupyter
