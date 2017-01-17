@@ -7,16 +7,21 @@
 @tooltipArrowHalfWidth: 7px;
 @tooltipArrowHalfHeight: 7px;
 
+@tooltipBorderRadius: 10px;
+@tooltipBoxShadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 .bk-tooltip {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   font-size: 12px;
   position: absolute;
-  padding: 5px;
+  padding: 10px;
   border: 1px solid @tooltipBorder;
   background-color: @tooltipColor;
   pointer-events: none;
   opacity: 0.95;
+  border-radius: @tooltipBorderRadius;
+  box-shadow: @tooltipBoxShadow;
 }
 
 .bk-tooltip > div:not(:first-child) {
